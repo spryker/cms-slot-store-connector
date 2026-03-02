@@ -12,9 +12,6 @@ use Spryker\Client\Kernel\AbstractFactory;
 
 class CmsSlotStoreConnectorFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Client\CmsSlotStoreConnector\Dependency\Client\CmsSlotStoreConnectorToStoreClientInterface
-     */
     public function getStoreClient(): CmsSlotStoreConnectorToStoreClientInterface
     {
         return $this->getProvidedDependency(CmsSlotStoreConnectorDependencyProvider::CLIENT_STORE);
